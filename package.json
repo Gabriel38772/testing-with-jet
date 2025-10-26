@@ -1,0 +1,27 @@
+{
+  "name": "testing-with-jet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest tests",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "underscore": "^1.13.7"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^13.0.1",
+    "geckodriver": "^5.0.0",
+    "jest": "^30.0.5",
+    "selenium-webdriver": "^4.35.0",
+    "webpack": "^5.101.2",
+    "webpack-cli": "^6.0.1"
+  }
+}
