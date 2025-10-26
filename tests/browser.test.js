@@ -22,10 +22,10 @@ test('The stack should be empty in the beginning', async () => {
 test('Pusha till stacken should update display', async () => {
   let push = await driver.findElement(By.id('push'));
   await push.click();
+  await driver.wait(until.alertIsPresent(), 2000); // vänta på prompt
   let alert = await driver.switchTo().alert();
   await alert.sendKeys("Bananer");
   await alert.accept();
-
   const topEl = await driver.findElement(By.id('top_of_stack'));
   await driver.wait(until.elementTextIs(topEl, 'Bananer'), 2000);
   let stackText = await topEl.getText();
