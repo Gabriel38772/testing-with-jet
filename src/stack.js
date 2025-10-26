@@ -11,5 +11,5 @@ exports.pop = function () {
 };
 
 exports.peek = function () {
-    return stack[0]; // avsiktlig bugg
+    return _.last(stack);
 };
