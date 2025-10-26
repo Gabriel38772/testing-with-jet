@@ -63,5 +63,5 @@ test('Poppa stacken updates display to previous top', async () => {
   await alert.accept();
 
   await peekBtn.click();
-  await driver.wait(until.elementTextIs(topEl, 'A'), 2000);
+  await driver.wait(until.elementTextIs(topEl, 'C'), 2000); // medvetet fel för FAIL-first
 });
